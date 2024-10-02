@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fCv-Bw-Um7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Starting View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartingViewController" customModule="ZooAdministration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoo Administration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-nd-frS">
+                                <rect key="frame" x="50" y="153" width="293" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuW-vO-8Dq">
+                                <rect key="frame" x="20" y="263.33333333333331" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Animal And Zoo Keeper Creation"/>
+                                <connections>
+                                    <action selector="toMiddleController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IXo-3e-GeT"/>
+                                    <segue destination="ZEf-3c-EHs" kind="show" identifier="toMiddleController" id="2mV-Qg-3Cf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN1-r2-CPY">
+                                <rect key="frame" x="20" y="347" width="116" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="List Animals"/>
+                                <connections>
+                                    <action selector="listAnimals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9x-Ec-u0w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfN-yJ-dnC">
+                                <rect key="frame" x="240" y="347" width="137" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="List Zookepers"/>
+                                <connections>
+                                    <action selector="listZookeepers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1z-fJ-ksQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ccU-nd-frS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="11p-UN-zIa"/>
+                            <constraint firstItem="ccU-nd-frS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="RUc-Ky-mQy"/>
+                            <constraint firstItem="NuW-vO-8Dq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SgY-MZ-N0W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccU-nd-frS" secondAttribute="trailing" constant="50" id="Svg-4W-iN6"/>
+                            <constraint firstItem="NuW-vO-8Dq" firstAttribute="top" secondItem="ccU-nd-frS" secondAttribute="bottom" constant="90" id="WKN-6m-Fxe"/>
+                            <constraint firstItem="NuW-vO-8Dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tGn-bi-H4d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jcQ-uq-3yM"/>
+                    <connections>
+                        <outlet property="clickCreation" destination="NuW-vO-8Dq" id="jVt-y4-lXt"/>
+                        <outlet property="zooLabel" destination="ccU-nd-frS" id="qjM-j0-GO5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="13"/>
+        </scene>
+        <!--Animal Table View Controller-->
+        <scene sceneID="HcC-0Z-e7n">
+            <objects>
+                <viewController id="5No-dp-Jcb" customClass="AnimalTableViewController" customModule="ZooAdministration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LuX-Ts-goq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0EB-kZ-U5l">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="animalCell" rowHeight="196" id="62l-Mw-myB">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="196"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="62l-Mw-myB" id="gse-tw-MtN">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="196"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAa-2S-Cqu">
+                                                    <rect key="frame" x="20.000000000000004" y="10.999999999999998" width="41.333333333333343" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8O-oY-VrV">
+                                                    <rect key="frame" x="20" y="164" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXw-wE-OJi">
+                                                    <rect key="frame" x="20" y="87.666666666666671" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OAa-2S-Cqu" firstAttribute="leading" secondItem="gse-tw-MtN" secondAttribute="leadingMargin" id="1ZG-Sj-71l"/>
+                                                <constraint firstItem="D8O-oY-VrV" firstAttribute="bottom" secondItem="gse-tw-MtN" secondAttribute="bottomMargin" id="9S2-fK-JHp"/>
+                                                <constraint firstItem="fXw-wE-OJi" firstAttribute="leading" secondItem="gse-tw-MtN" secondAttribute="leadingMargin" id="ayx-hM-qJe"/>
+                                                <constraint firstItem="D8O-oY-VrV" firstAttribute="leading" secondItem="gse-tw-MtN" secondAttribute="leadingMargin" id="eKB-Ns-IoJ"/>
+                                                <constraint firstItem="fXw-wE-OJi" firstAttribute="centerY" secondItem="gse-tw-MtN" secondAttribute="centerY" id="i6J-IH-Hbi"/>
+                                                <constraint firstItem="OAa-2S-Cqu" firstAttribute="top" secondItem="gse-tw-MtN" secondAttribute="topMargin" id="rfy-e6-qtV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="D8O-oY-VrV" secondAttribute="bottom" id="y3k-Md-86F"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Yb-K8-Jd7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Yb-K8-Jd7" firstAttribute="trailing" secondItem="0EB-kZ-U5l" secondAttribute="trailing" id="Dsr-RJ-Ugq"/>
+                            <constraint firstItem="0EB-kZ-U5l" firstAttribute="top" secondItem="1Yb-K8-Jd7" secondAttribute="top" id="Pho-Sh-eOX"/>
+                            <constraint firstItem="0EB-kZ-U5l" firstAttribute="leading" secondItem="1Yb-K8-Jd7" secondAttribute="leading" id="dmR-Dx-rvO"/>
+                            <constraint firstItem="1Yb-K8-Jd7" firstAttribute="bottom" secondItem="0EB-kZ-U5l" secondAttribute="bottom" id="fJa-Sg-wPL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UcM-Cz-VXr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwf-Ei-JSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1087.7862595419847" y="736.61971830985919"/>
+        </scene>
+        <!--Middle View Controller-->
+        <scene sceneID="Rgn-C0-vFC">
+            <objects>
+                <viewController id="ZEf-3c-EHs" customClass="MiddleViewController" customModule="ZooAdministration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Y7-8d-N01">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="animal voice" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wyx-J2-naB">
+                                <rect key="frame" x="40" y="147" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="water consumption per day" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NOg-Er-XO0">
+                                <rect key="frame" x="40" y="191" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="animal name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qQM-Q5-Tr6">
+                                <rect key="frame" x="40" y="103" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGP-70-BJ8">
+                                <rect key="frame" x="60" y="245" width="273" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Create Animal"/>
+                                <connections>
+                                    <action selector="createAnimal:" destination="ZEf-3c-EHs" eventType="touchUpInside" id="Mhx-Qf-Sjp"/>
+                                    <segue destination="xDb-3g-FKC" kind="show" identifier="toAnimal" id="3G1-BO-ist"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="zoo keeper name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qiv-sv-LRY">
+                                <rect key="frame" x="40" y="361" width="313" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q26-V7-9vP">
+                                <rect key="frame" x="115" y="422" width="163" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Create ZooKeeper"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jto-zs-Wyi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VGP-70-BJ8" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="60" id="2VD-1K-L5q"/>
+                            <constraint firstItem="NOg-Er-XO0" firstAttribute="top" secondItem="Wyx-J2-naB" secondAttribute="bottom" constant="10" id="5cV-Ij-pIn"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="VGP-70-BJ8" secondAttribute="trailing" constant="60" id="8MD-MI-Avt"/>
+                            <constraint firstItem="qQM-Q5-Tr6" firstAttribute="top" secondItem="Jto-zs-Wyi" secondAttribute="top" id="DdH-gE-b4R"/>
+                            <constraint firstItem="Wyx-J2-naB" firstAttribute="top" secondItem="qQM-Q5-Tr6" secondAttribute="bottom" constant="10" id="EX2-7A-7Hz"/>
+                            <constraint firstItem="NOg-Er-XO0" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="40" id="GqD-aT-tFt"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="qQM-Q5-Tr6" secondAttribute="trailing" constant="40" id="Iyv-4K-MiS"/>
+                            <constraint firstItem="qQM-Q5-Tr6" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="40" id="Ocb-6y-YFm"/>
+                            <constraint firstItem="Wyx-J2-naB" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="40" id="OxT-77-10Y"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="NOg-Er-XO0" secondAttribute="trailing" constant="40" id="VJI-do-lyd"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="Wyx-J2-naB" secondAttribute="trailing" constant="40" id="bCp-O7-kcy"/>
+                            <constraint firstItem="VGP-70-BJ8" firstAttribute="top" secondItem="NOg-Er-XO0" secondAttribute="bottom" constant="20" id="gYY-vU-4X4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iA0-u5-tZs"/>
+                    <connections>
+                        <outlet property="animalVoice" destination="Wyx-J2-naB" id="8YH-ge-WvB"/>
+                        <outlet property="nameField" destination="qQM-Q5-Tr6" id="YDv-rf-ERS"/>
+                        <outlet property="waterConsumptionTextField" destination="NOg-Er-XO0" id="0VF-MC-2MH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I5Y-za-CjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1827" y="4"/>
+        </scene>
+        <!--Animal Table View Controller2-->
+        <scene sceneID="MvS-Bx-h3h">
+            <objects>
+                <viewController id="xDb-3g-FKC" customClass="AnimalTableViewController2" customModule="ZooAdministration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W89-6u-wH7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bvk-hh-B3c">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="YY7-JL-f7A">
+                                    <rect key="frame" x="0.0" y="239" width="393" height="91"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Recreate Animal"/>
+                                    <connections>
+                                        <action selector="reCreateAnimal:" destination="xDb-3g-FKC" eventType="touchUpInside" id="6bC-re-bwb"/>
+                                    </connections>
+                                </button>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="animalCell" rowHeight="161" id="X4S-Pm-kHC" customClass="AnimalCell" customModule="ZooAdministration" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X4S-Pm-kHC" id="MZb-T1-3fM">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="161"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e47-LH-s0Z">
+                                                    <rect key="frame" x="38" y="25" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0E-KM-lkm">
+                                                    <rect key="frame" x="38" y="69" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4Z-KL-yER">
+                                                    <rect key="frame" x="38" y="119" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="e47-LH-s0Z" id="5mu-w6-mpp"/>
+                                            <outlet property="voiceLabel" destination="F0E-KM-lkm" id="X5c-QG-orA"/>
+                                            <outlet property="waterConsumptionLabel" destination="D4Z-KL-yER" id="S29-HU-hFS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fpS-zg-6Wx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bvk-hh-B3c" firstAttribute="leading" secondItem="fpS-zg-6Wx" secondAttribute="leading" id="Cqu-na-Ner"/>
+                            <constraint firstItem="Bvk-hh-B3c" firstAttribute="top" secondItem="W89-6u-wH7" secondAttribute="top" id="cxC-Vh-j9w"/>
+                            <constraint firstItem="fpS-zg-6Wx" firstAttribute="bottom" secondItem="Bvk-hh-B3c" secondAttribute="bottom" id="lI4-4G-bYb"/>
+                            <constraint firstItem="fpS-zg-6Wx" firstAttribute="trailing" secondItem="Bvk-hh-B3c" secondAttribute="trailing" id="oBU-I0-xTy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GRc-d9-TVx"/>
+                    <connections>
+                        <outlet property="tableView" destination="Bvk-hh-B3c" id="g8w-ba-8In"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4HZ-RB-g8k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2713.740458015267" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oL0-Zd-vpa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fCv-Bw-Um7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O9O-r0-POn">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ie7-VB-pMR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHP-cs-CLD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
