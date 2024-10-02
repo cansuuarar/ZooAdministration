@@ -1,12 +1,7 @@
-//
-//  AnimalTableViewController.swift
-//  ZooAdministration
-//
-//  Created by CANSU ARAR on 1.10.2024.
-//
+
 
 import UIKit
-/*
+
 class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
 
@@ -16,19 +11,24 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var tableView: UITableView!
     
-    let appDelegate = UIApplication.shared.delegate as? AppDelegate
+    var animals: [Animal] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.reloadData()
 
     }
+    /*
+    override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
+            tableView.reloadData() // Tabloyu güncelleyin
+        }
+     */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let appDelegate {
-            return appDelegate.animals.count
-        }
+        return animals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,6 +48,14 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
         return 148
     }
     
+    
+    @IBAction func reCreateAnimal(_ sender: UIButton) {
+        //segue present ise
+        //self.dismiss(animated: true, completion: nil)
+        
+        //segue push ise
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
 }
-
-*/

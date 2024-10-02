@@ -20,6 +20,8 @@ class MiddleViewController: UIViewController {
     var voice: String?
     var waterConsumption: Int?
     
+    var animals: [Animal] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.lightGray
@@ -32,9 +34,15 @@ class MiddleViewController: UIViewController {
         //self.performSegue(withIdentifier: "toAnimal", sender: self)
     }
     
+    
+    @IBAction func listAnimals(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "toAnimal", sender: self)
+        
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toAnimal" {
-            let destinationVC = segue.destination as! AnimalTableViewController2
+            let destinationVC = segue.destination as! AnimalTableViewController
             destinationVC.name = name
             destinationVC.voice = voice
             destinationVC.waterConsumption = waterConsumption
@@ -42,6 +50,10 @@ class MiddleViewController: UIViewController {
             let animal = Animal(name: name!, voice: voice!, waterConsumption: waterConsumption!)
             destinationVC.animals.append(animal)
             
+            animals.append(animal)
+       
         }
     }
+    
+    
 }

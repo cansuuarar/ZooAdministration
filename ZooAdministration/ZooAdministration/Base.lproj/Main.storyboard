@@ -71,73 +71,6 @@
             </objects>
             <point key="canvasLocation" x="1039" y="13"/>
         </scene>
-        <!--Animal Table View Controller-->
-        <scene sceneID="HcC-0Z-e7n">
-            <objects>
-                <viewController id="5No-dp-Jcb" customClass="AnimalTableViewController" customModule="ZooAdministration" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LuX-Ts-goq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0EB-kZ-U5l">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="animalCell" rowHeight="196" id="62l-Mw-myB">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="196"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="62l-Mw-myB" id="gse-tw-MtN">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="196"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAa-2S-Cqu">
-                                                    <rect key="frame" x="20.000000000000004" y="10.999999999999998" width="41.333333333333343" height="20.333333333333329"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8O-oY-VrV">
-                                                    <rect key="frame" x="20" y="164" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXw-wE-OJi">
-                                                    <rect key="frame" x="20" y="87.666666666666671" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="OAa-2S-Cqu" firstAttribute="leading" secondItem="gse-tw-MtN" secondAttribute="leadingMargin" id="1ZG-Sj-71l"/>
-                                                <constraint firstItem="D8O-oY-VrV" firstAttribute="bottom" secondItem="gse-tw-MtN" secondAttribute="bottomMargin" id="9S2-fK-JHp"/>
-                                                <constraint firstItem="fXw-wE-OJi" firstAttribute="leading" secondItem="gse-tw-MtN" secondAttribute="leadingMargin" id="ayx-hM-qJe"/>
-                                                <constraint firstItem="D8O-oY-VrV" firstAttribute="leading" secondItem="gse-tw-MtN" secondAttribute="leadingMargin" id="eKB-Ns-IoJ"/>
-                                                <constraint firstItem="fXw-wE-OJi" firstAttribute="centerY" secondItem="gse-tw-MtN" secondAttribute="centerY" id="i6J-IH-Hbi"/>
-                                                <constraint firstItem="OAa-2S-Cqu" firstAttribute="top" secondItem="gse-tw-MtN" secondAttribute="topMargin" id="rfy-e6-qtV"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="D8O-oY-VrV" secondAttribute="bottom" id="y3k-Md-86F"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="1Yb-K8-Jd7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="1Yb-K8-Jd7" firstAttribute="trailing" secondItem="0EB-kZ-U5l" secondAttribute="trailing" id="Dsr-RJ-Ugq"/>
-                            <constraint firstItem="0EB-kZ-U5l" firstAttribute="top" secondItem="1Yb-K8-Jd7" secondAttribute="top" id="Pho-Sh-eOX"/>
-                            <constraint firstItem="0EB-kZ-U5l" firstAttribute="leading" secondItem="1Yb-K8-Jd7" secondAttribute="leading" id="dmR-Dx-rvO"/>
-                            <constraint firstItem="1Yb-K8-Jd7" firstAttribute="bottom" secondItem="0EB-kZ-U5l" secondAttribute="bottom" id="fJa-Sg-wPL"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="UcM-Cz-VXr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwf-Ei-JSr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1087.7862595419847" y="736.61971830985919"/>
-        </scene>
         <!--Middle View Controller-->
         <scene sceneID="Rgn-C0-vFC">
             <objects>
@@ -182,6 +115,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Create ZooKeeper"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFE-2d-Q9a">
+                                <rect key="frame" x="139" y="306" width="116" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="List Animals"/>
+                                <connections>
+                                    <action selector="listAnimals:" destination="ZEf-3c-EHs" eventType="touchUpInside" id="ZDH-z1-Cu9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jto-zs-Wyi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -211,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1827" y="4"/>
         </scene>
-        <!--Animal Table View Controller2-->
+        <!--Animal Table View Controller-->
         <scene sceneID="MvS-Bx-h3h">
             <objects>
-                <viewController id="xDb-3g-FKC" customClass="AnimalTableViewController2" customModule="ZooAdministration" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xDb-3g-FKC" customClass="AnimalTableViewController" customModule="ZooAdministration" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W89-6u-wH7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

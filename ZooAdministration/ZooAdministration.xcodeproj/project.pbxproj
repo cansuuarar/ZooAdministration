@@ -16,10 +16,9 @@
 		0E7A08CE2CAAE6F00069546B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A08CD2CAAE6F00069546B /* Animal.swift */; };
 		0E7A08D02CAAE7150069546B /* ZooKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A08CF2CAAE7150069546B /* ZooKeeper.swift */; };
 		0E7A08D72CAB43AB0069546B /* MiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A08D62CAB43AB0069546B /* MiddleViewController.swift */; };
-		0E7A08DB2CAC2A3C0069546B /* AnimalTableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A08DA2CAC2A3C0069546B /* AnimalTableViewController2.swift */; };
+		0E7A08DB2CAC2A3C0069546B /* AnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A08DA2CAC2A3C0069546B /* AnimalTableViewController.swift */; };
 		0E7A08DE2CAC2DE30069546B /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A08DD2CAC2DE30069546B /* AnimalCell.swift */; };
 		0E9232DE2CAC75150064F2DC /* Zoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9232DD2CAC75150064F2DC /* Zoo.swift */; };
-		0E9232E02CAC77670064F2DC /* AnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9232DF2CAC77670064F2DC /* AnimalTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +33,9 @@
 		0E7A08CD2CAAE6F00069546B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		0E7A08CF2CAAE7150069546B /* ZooKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooKeeper.swift; sourceTree = "<group>"; };
 		0E7A08D62CAB43AB0069546B /* MiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleViewController.swift; sourceTree = "<group>"; };
-		0E7A08DA2CAC2A3C0069546B /* AnimalTableViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController2.swift; sourceTree = "<group>"; };
+		0E7A08DA2CAC2A3C0069546B /* AnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController.swift; sourceTree = "<group>"; };
 		0E7A08DD2CAC2DE30069546B /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		0E9232DD2CAC75150064F2DC /* Zoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zoo.swift; sourceTree = "<group>"; };
-		0E9232DF2CAC77670064F2DC /* AnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +94,9 @@
 		0E7A08D12CAAE7380069546B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0E7A08DA2CAC2A3C0069546B /* AnimalTableViewController2.swift */,
+				0E7A08DA2CAC2A3C0069546B /* AnimalTableViewController.swift */,
 				0E7A08D62CAB43AB0069546B /* MiddleViewController.swift */,
 				0E7A08BC2CAAE6B40069546B /* StartingViewController.swift */,
-				0E9232DF2CAC77670064F2DC /* AnimalTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -184,8 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E7A08BD2CAAE6B40069546B /* StartingViewController.swift in Sources */,
-				0E9232E02CAC77670064F2DC /* AnimalTableViewController.swift in Sources */,
-				0E7A08DB2CAC2A3C0069546B /* AnimalTableViewController2.swift in Sources */,
+				0E7A08DB2CAC2A3C0069546B /* AnimalTableViewController.swift in Sources */,
 				0E7A08CE2CAAE6F00069546B /* Animal.swift in Sources */,
 				0E7A08B92CAAE6B40069546B /* AppDelegate.swift in Sources */,
 				0E7A08D02CAAE7150069546B /* ZooKeeper.swift in Sources */,
