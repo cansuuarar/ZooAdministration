@@ -28,10 +28,17 @@ class MiddleViewController: UIViewController {
     }
     
     @IBAction func createAnimal(_ sender: UIButton) {
-        name = nameField.text ?? ""
-        voice = animalVoice.text ?? ""
-        waterConsumption = Int(waterConsumptionTextField.text ?? "")
+        let name = nameField.text ?? ""
+        let voice = animalVoice.text ?? ""
+        let waterConsumption = Int(waterConsumptionTextField.text ?? "") ?? 0
+                
+        let newAnimal = Animal(name: name, voice: voice, waterConsumption: waterConsumption)
+        animals.append(newAnimal)
         //self.performSegue(withIdentifier: "toAnimal", sender: self)
+        
+        nameField.text = ""
+        animalVoice.text = ""
+        waterConsumptionTextField.text = ""
     }
     
     
@@ -43,16 +50,10 @@ class MiddleViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toAnimal" {
             let destinationVC = segue.destination as! AnimalTableViewController
-            destinationVC.name = name
-            destinationVC.voice = voice
-            destinationVC.waterConsumption = waterConsumption
-            
-            let animal = Animal(name: name!, voice: voice!, waterConsumption: waterConsumption!)
-            destinationVC.animals.append(animal)
-            
-            animals.append(animal)
-       
+            destinationVC.animals = animals  // Tüm array i aktarmak için
         }
+        
+        
     }
     
     

@@ -25,28 +25,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuW-vO-8Dq">
                                 <rect key="frame" x="20" y="263.33333333333331" width="353" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Animal And Zoo Keeper Creation"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Animal And Zoo Keeper"/>
                                 <connections>
                                     <action selector="toMiddleController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IXo-3e-GeT"/>
                                     <segue destination="ZEf-3c-EHs" kind="show" identifier="toMiddleController" id="2mV-Qg-3Cf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN1-r2-CPY">
-                                <rect key="frame" x="20" y="347" width="116" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="List Animals"/>
-                                <connections>
-                                    <action selector="listAnimals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9x-Ec-u0w"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfN-yJ-dnC">
-                                <rect key="frame" x="240" y="347" width="137" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="List Zookepers"/>
-                                <connections>
-                                    <action selector="listZookeepers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1z-fJ-ksQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,28 +163,36 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="161"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e47-LH-s0Z">
-                                                    <rect key="frame" x="38" y="25" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e47-LH-s0Z">
+                                                    <rect key="frame" x="20" y="11" width="353" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0E-KM-lkm">
-                                                    <rect key="frame" x="38" y="69" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4Z-KL-yER">
+                                                    <rect key="frame" x="20" y="73" width="353" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4Z-KL-yER">
-                                                    <rect key="frame" x="38" y="119" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0E-KM-lkm">
+                                                    <rect key="frame" x="20" y="42" width="353" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="D4Z-KL-yER" firstAttribute="leading" secondItem="MZb-T1-3fM" secondAttribute="leadingMargin" id="4p6-8E-jlY"/>
+                                                <constraint firstItem="D4Z-KL-yER" firstAttribute="top" secondItem="F0E-KM-lkm" secondAttribute="bottom" constant="10" id="CDl-jD-nin"/>
+                                                <constraint firstItem="F0E-KM-lkm" firstAttribute="leading" secondItem="MZb-T1-3fM" secondAttribute="leadingMargin" id="DBJ-aR-adi"/>
+                                                <constraint firstItem="D4Z-KL-yER" firstAttribute="trailing" secondItem="MZb-T1-3fM" secondAttribute="trailingMargin" id="GDn-Vh-MkZ"/>
+                                                <constraint firstItem="F0E-KM-lkm" firstAttribute="top" secondItem="e47-LH-s0Z" secondAttribute="bottom" constant="10" id="Jnb-KV-3Sq"/>
+                                                <constraint firstItem="e47-LH-s0Z" firstAttribute="top" secondItem="MZb-T1-3fM" secondAttribute="topMargin" id="KNb-Ou-Vv7"/>
+                                                <constraint firstItem="e47-LH-s0Z" firstAttribute="leading" secondItem="MZb-T1-3fM" secondAttribute="leadingMargin" id="e1k-6Y-LjA"/>
+                                                <constraint firstItem="F0E-KM-lkm" firstAttribute="trailing" secondItem="MZb-T1-3fM" secondAttribute="trailingMargin" id="mZ9-Ts-M2O"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="e47-LH-s0Z" secondAttribute="trailing" id="s8L-Q6-Xcs"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="e47-LH-s0Z" id="5mu-w6-mpp"/>
