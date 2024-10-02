@@ -11,11 +11,12 @@ class Animal {
     var name: String
     var voice: String
     var waterConsumption: Int
-    //weak var zooKeeper: ZooKeeper?
+    var zooKeeper: ZooKeeper?
    
-    init(name: String, voice: String, waterConsumption: Int) {
+    init(name: String, voice: String, waterConsumption: Int, zooKeeper: ZooKeeper?) {
         self.name = name
         self.voice = voice
         self.waterConsumption = waterConsumption
+        self.zooKeeper = zooKeeper
     }
 }

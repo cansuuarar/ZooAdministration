@@ -8,6 +8,7 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
     var name: String?
     var voice: String?
     var waterConsumption: Int?
+    var zooKeeper: ZooKeeper?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -15,17 +16,12 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.label
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
 
     }
-    /*
-    override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-            tableView.reloadData() // Tabloyu güncelleyin
-        }
-     */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return animals.count
@@ -39,9 +35,9 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
         cell.nameLabel.text = element.name
         cell.voiceLabel.text = element.voice
         cell.waterConsumptionLabel.text = String(element.waterConsumption)
+        cell.zooKeeperLabel.text = element.zooKeeper?.name
         
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -49,7 +45,7 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     
-    @IBAction func reCreateAnimal(_ sender: UIButton) {
+    @IBAction func addAnotherAnimal(_ sender: UIButton) {
         //segue present ise
         //self.dismiss(animated: true, completion: nil)
         

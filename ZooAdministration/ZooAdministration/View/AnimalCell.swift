@@ -12,5 +12,6 @@ class AnimalCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var voiceLabel: UILabel!
     @IBOutlet weak var waterConsumptionLabel: UILabel!
+    @IBOutlet weak var zooKeeperLabel: UILabel!
 }
 

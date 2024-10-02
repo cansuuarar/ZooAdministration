@@ -2,7 +2,7 @@
 //  ZooKeeper.swift
 //  ZooAdministration
 //
-//  Created by CANSU ARAR on 30.09.2024.
+//  Created by CANSU ARAR on 2.10.2024.
 //
 
 import Foundation
@@ -22,4 +22,3 @@ class ZooKeeper {
         return countOfKeep
     }
 }
-

@@ -16,23 +16,14 @@ class StartingViewController: UIViewController {
         super.viewDidLoad()
         zooLabel.text = "ZOO ADMINISTRATION"
         zooLabel.backgroundColor = .gray
-        view.backgroundColor = .blue
+        view.backgroundColor = UIColor.label
+        
+        var zoo = Zoo()
     }
 
     @IBAction func toMiddleController(_ sender: UIButton) {
        // self.performSegue(withIdentifier: "toMiddleController", sender: self)
-        
     }
-    
-    /*
-    @IBAction func listAnimals(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "listAnimals", sender: self)
-    }
-    
-    
-    @IBAction func listZookeepers(_ sender: Any) {
-    }
-     */
     
 }
 

@@ -23,12 +23,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuW-vO-8Dq">
-                                <rect key="frame" x="20" y="263.33333333333331" width="353" height="35"/>
+                                <rect key="frame" x="50" y="203.33333333333334" width="293" height="35"/>
+                                <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Animal And Zoo Keeper"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Animal And Zoo Keeper">
+                                    <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="toMiddleController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IXo-3e-GeT"/>
                                     <segue destination="ZEf-3c-EHs" kind="show" identifier="toMiddleController" id="2mV-Qg-3Cf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNm-z8-B6C">
+                                <rect key="frame" x="50" y="290" width="293" height="20.333333333333343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLC-4k-Cmw">
+                                <rect key="frame" x="50" y="268.33333333333331" width="293" height="35"/>
+                                <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Zoo Budget Operations">
+                                    <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="toMiddleController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5P-44-oQI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,11 +57,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ccU-nd-frS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="11p-UN-zIa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sLC-4k-Cmw" secondAttribute="trailing" constant="50" id="3jR-a4-Our"/>
+                            <constraint firstItem="NuW-vO-8Dq" firstAttribute="top" secondItem="ccU-nd-frS" secondAttribute="bottom" constant="30" id="3oE-mH-H2K"/>
+                            <constraint firstItem="sLC-4k-Cmw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="HLg-Gj-8xG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NuW-vO-8Dq" secondAttribute="trailing" constant="50" id="Hhc-CH-wfh"/>
                             <constraint firstItem="ccU-nd-frS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="RUc-Ky-mQy"/>
+                            <constraint firstItem="sLC-4k-Cmw" firstAttribute="top" secondItem="NuW-vO-8Dq" secondAttribute="bottom" constant="30" id="STL-cE-vce"/>
                             <constraint firstItem="NuW-vO-8Dq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SgY-MZ-N0W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccU-nd-frS" secondAttribute="trailing" constant="50" id="Svg-4W-iN6"/>
-                            <constraint firstItem="NuW-vO-8Dq" firstAttribute="top" secondItem="ccU-nd-frS" secondAttribute="bottom" constant="90" id="WKN-6m-Fxe"/>
-                            <constraint firstItem="NuW-vO-8Dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tGn-bi-H4d"/>
+                            <constraint firstItem="NuW-vO-8Dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="doZ-jb-RFg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jcQ-uq-3yM"/>
@@ -77,63 +102,168 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGP-70-BJ8">
-                                <rect key="frame" x="60" y="245" width="273" height="35"/>
+                                <rect key="frame" x="60" y="289" width="273" height="35"/>
+                                <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Create Animal"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Add Animal">
+                                    <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="createAnimal:" destination="ZEf-3c-EHs" eventType="touchUpInside" id="Mhx-Qf-Sjp"/>
                                     <segue destination="xDb-3g-FKC" kind="show" identifier="toAnimal" id="3G1-BO-ist"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="zoo keeper name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qiv-sv-LRY">
-                                <rect key="frame" x="40" y="361" width="313" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="zoo keeper name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qiv-sv-LRY">
+                                <rect key="frame" x="40" y="429" width="313" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q26-V7-9vP">
-                                <rect key="frame" x="115" y="422" width="163" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q26-V7-9vP">
+                                <rect key="frame" x="60" y="483" width="273" height="35"/>
+                                <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Create ZooKeeper"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Add ZooKeeper">
+                                    <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createZooKeeper:" destination="ZEf-3c-EHs" eventType="touchUpInside" id="z7i-hr-QND"/>
+                                    <segue destination="kJ9-Yz-1g4" kind="show" identifier="toZooKeeper" id="83j-Wd-jiV"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFE-2d-Q9a">
-                                <rect key="frame" x="139" y="306" width="116" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFE-2d-Q9a">
+                                <rect key="frame" x="60" y="334" width="273" height="35"/>
+                                <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="List Animals"/>
+                                <buttonConfiguration key="configuration" style="gray" title="List Animals">
+                                    <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="listAnimals:" destination="ZEf-3c-EHs" eventType="touchUpInside" id="ZDH-z1-Cu9"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="zoo keeper name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bO7-Dw-Xq7">
+                                <rect key="frame" x="40" y="235" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jto-zs-Wyi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VGP-70-BJ8" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="60" id="2VD-1K-L5q"/>
                             <constraint firstItem="NOg-Er-XO0" firstAttribute="top" secondItem="Wyx-J2-naB" secondAttribute="bottom" constant="10" id="5cV-Ij-pIn"/>
+                            <constraint firstItem="Q26-V7-9vP" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="60" id="65y-WA-EH7"/>
                             <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="VGP-70-BJ8" secondAttribute="trailing" constant="60" id="8MD-MI-Avt"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="VGP-70-BJ8" secondAttribute="trailing" constant="60" id="9OU-cT-wev"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="vFE-2d-Q9a" secondAttribute="trailing" constant="60" id="CyD-ZY-Wsb"/>
                             <constraint firstItem="qQM-Q5-Tr6" firstAttribute="top" secondItem="Jto-zs-Wyi" secondAttribute="top" id="DdH-gE-b4R"/>
                             <constraint firstItem="Wyx-J2-naB" firstAttribute="top" secondItem="qQM-Q5-Tr6" secondAttribute="bottom" constant="10" id="EX2-7A-7Hz"/>
+                            <constraint firstItem="bO7-Dw-Xq7" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="40" id="GDX-Ha-swC"/>
                             <constraint firstItem="NOg-Er-XO0" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="40" id="GqD-aT-tFt"/>
                             <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="qQM-Q5-Tr6" secondAttribute="trailing" constant="40" id="Iyv-4K-MiS"/>
+                            <constraint firstItem="Q26-V7-9vP" firstAttribute="top" secondItem="Qiv-sv-LRY" secondAttribute="bottom" constant="20" id="Lju-VM-LFg"/>
+                            <constraint firstItem="vFE-2d-Q9a" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="60" id="NMn-jh-tfy"/>
                             <constraint firstItem="qQM-Q5-Tr6" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="40" id="Ocb-6y-YFm"/>
                             <constraint firstItem="Wyx-J2-naB" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="40" id="OxT-77-10Y"/>
+                            <constraint firstItem="vFE-2d-Q9a" firstAttribute="top" secondItem="VGP-70-BJ8" secondAttribute="bottom" constant="10" id="QS0-fb-7gU"/>
                             <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="NOg-Er-XO0" secondAttribute="trailing" constant="40" id="VJI-do-lyd"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="bO7-Dw-Xq7" secondAttribute="trailing" constant="40" id="Vqy-RI-DKC"/>
+                            <constraint firstItem="VGP-70-BJ8" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="60" id="aTM-Oo-usg"/>
                             <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="Wyx-J2-naB" secondAttribute="trailing" constant="40" id="bCp-O7-kcy"/>
-                            <constraint firstItem="VGP-70-BJ8" firstAttribute="top" secondItem="NOg-Er-XO0" secondAttribute="bottom" constant="20" id="gYY-vU-4X4"/>
+                            <constraint firstItem="Qiv-sv-LRY" firstAttribute="leading" secondItem="Jto-zs-Wyi" secondAttribute="leading" constant="40" id="df0-Fu-J6t"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="Q26-V7-9vP" secondAttribute="trailing" constant="60" id="fZu-4x-tYZ"/>
+                            <constraint firstItem="Qiv-sv-LRY" firstAttribute="top" secondItem="vFE-2d-Q9a" secondAttribute="bottom" constant="60" id="gWs-Qo-hzi"/>
+                            <constraint firstItem="VGP-70-BJ8" firstAttribute="top" secondItem="bO7-Dw-Xq7" secondAttribute="bottom" constant="20" id="t38-4M-6pm"/>
+                            <constraint firstItem="Jto-zs-Wyi" firstAttribute="trailing" secondItem="Qiv-sv-LRY" secondAttribute="trailing" constant="40" id="tjZ-hO-rqF"/>
+                            <constraint firstItem="bO7-Dw-Xq7" firstAttribute="top" secondItem="NOg-Er-XO0" secondAttribute="bottom" constant="10" id="wsT-s1-M9y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iA0-u5-tZs"/>
                     <connections>
                         <outlet property="animalVoice" destination="Wyx-J2-naB" id="8YH-ge-WvB"/>
+                        <outlet property="createAnimalButton" destination="VGP-70-BJ8" id="uuL-RO-Bau"/>
                         <outlet property="nameField" destination="qQM-Q5-Tr6" id="YDv-rf-ERS"/>
                         <outlet property="waterConsumptionTextField" destination="NOg-Er-XO0" id="0VF-MC-2MH"/>
+                        <outlet property="zooKeeperTextField" destination="Qiv-sv-LRY" id="2wW-bA-Wnl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5Y-za-CjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1827" y="4"/>
+        </scene>
+        <!--Zoo Keeper Table View Controller-->
+        <scene sceneID="Lr8-BV-mRV">
+            <objects>
+                <viewController id="kJ9-Yz-1g4" customClass="ZooKeeperTableViewController" customModule="ZooAdministration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JE4-QQ-4aG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XZ8-Aa-iGG">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="sEb-5V-crV">
+                                    <rect key="frame" x="0.0" y="200" width="393" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="gray" title="Add Another Zoo Keeper"/>
+                                </button>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zooKeeperCell" rowHeight="122" id="42o-06-chq" customClass="ZooKeeperCell" customModule="ZooAdministration" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="122"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="42o-06-chq" id="Kcc-k7-Fvc">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="122"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBS-UC-SVK">
+                                                    <rect key="frame" x="20" y="10.999999999999998" width="353" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5l-4h-LF3">
+                                                    <rect key="frame" x="20" y="90.666666666666671" width="353" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e5l-4h-LF3" firstAttribute="leading" secondItem="Kcc-k7-Fvc" secondAttribute="leadingMargin" id="8Wi-Xs-zcr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="HBS-UC-SVK" secondAttribute="trailing" id="cBs-Ce-s2j"/>
+                                                <constraint firstItem="HBS-UC-SVK" firstAttribute="leading" secondItem="Kcc-k7-Fvc" secondAttribute="leadingMargin" id="mRB-k9-ZFY"/>
+                                                <constraint firstItem="HBS-UC-SVK" firstAttribute="top" secondItem="Kcc-k7-Fvc" secondAttribute="topMargin" id="r3u-hI-Wps"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="e5l-4h-LF3" secondAttribute="trailing" id="vGI-R8-OXG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="e5l-4h-LF3" secondAttribute="bottom" id="yyH-sI-exb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="zooKeeperAnimals" destination="e5l-4h-LF3" id="cdz-IQ-PLg"/>
+                                            <outlet property="zooKeeperNameLabel" destination="HBS-UC-SVK" id="Rbj-5u-psP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ise-yV-l89"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ise-yV-l89" firstAttribute="bottom" secondItem="XZ8-Aa-iGG" secondAttribute="bottom" id="Jov-zu-rrt"/>
+                            <constraint firstItem="XZ8-Aa-iGG" firstAttribute="leading" secondItem="Ise-yV-l89" secondAttribute="leading" id="Xde-iu-F2N"/>
+                            <constraint firstItem="Ise-yV-l89" firstAttribute="trailing" secondItem="XZ8-Aa-iGG" secondAttribute="trailing" id="aBF-VX-Ud6"/>
+                            <constraint firstItem="XZ8-Aa-iGG" firstAttribute="top" secondItem="Ise-yV-l89" secondAttribute="top" id="yOz-xC-6Qh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c9K-tm-QPL"/>
+                    <connections>
+                        <outlet property="zooKeeperTableView" destination="XZ8-Aa-iGG" id="4xw-Tk-zRD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTk-7r-HmI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826.7175572519084" y="684.50704225352115"/>
         </scene>
         <!--Animal Table View Controller-->
         <scene sceneID="MvS-Bx-h3h">
@@ -149,10 +279,11 @@
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="YY7-JL-f7A">
                                     <rect key="frame" x="0.0" y="239" width="393" height="91"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Recreate Animal"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Add Another Animal"/>
                                     <connections>
-                                        <action selector="reCreateAnimal:" destination="xDb-3g-FKC" eventType="touchUpInside" id="6bC-re-bwb"/>
+                                        <action selector="addAnotherAnimal:" destination="xDb-3g-FKC" eventType="touchUpInside" id="6bC-re-bwb"/>
                                     </connections>
                                 </button>
                                 <prototypes>
@@ -175,6 +306,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CR1-wl-eLN">
+                                                    <rect key="frame" x="20" y="104" width="353" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0E-KM-lkm">
                                                     <rect key="frame" x="20" y="42" width="353" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -183,6 +320,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="CR1-wl-eLN" firstAttribute="leading" secondItem="MZb-T1-3fM" secondAttribute="leadingMargin" id="4nj-3t-mBv"/>
                                                 <constraint firstItem="D4Z-KL-yER" firstAttribute="leading" secondItem="MZb-T1-3fM" secondAttribute="leadingMargin" id="4p6-8E-jlY"/>
                                                 <constraint firstItem="D4Z-KL-yER" firstAttribute="top" secondItem="F0E-KM-lkm" secondAttribute="bottom" constant="10" id="CDl-jD-nin"/>
                                                 <constraint firstItem="F0E-KM-lkm" firstAttribute="leading" secondItem="MZb-T1-3fM" secondAttribute="leadingMargin" id="DBJ-aR-adi"/>
@@ -190,7 +328,9 @@
                                                 <constraint firstItem="F0E-KM-lkm" firstAttribute="top" secondItem="e47-LH-s0Z" secondAttribute="bottom" constant="10" id="Jnb-KV-3Sq"/>
                                                 <constraint firstItem="e47-LH-s0Z" firstAttribute="top" secondItem="MZb-T1-3fM" secondAttribute="topMargin" id="KNb-Ou-Vv7"/>
                                                 <constraint firstItem="e47-LH-s0Z" firstAttribute="leading" secondItem="MZb-T1-3fM" secondAttribute="leadingMargin" id="e1k-6Y-LjA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CR1-wl-eLN" secondAttribute="trailing" id="fx4-QZ-raa"/>
                                                 <constraint firstItem="F0E-KM-lkm" firstAttribute="trailing" secondItem="MZb-T1-3fM" secondAttribute="trailingMargin" id="mZ9-Ts-M2O"/>
+                                                <constraint firstItem="CR1-wl-eLN" firstAttribute="top" secondItem="D4Z-KL-yER" secondAttribute="bottom" constant="10" id="ma7-xO-p4D"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="e47-LH-s0Z" secondAttribute="trailing" id="s8L-Q6-Xcs"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -198,6 +338,7 @@
                                             <outlet property="nameLabel" destination="e47-LH-s0Z" id="5mu-w6-mpp"/>
                                             <outlet property="voiceLabel" destination="F0E-KM-lkm" id="X5c-QG-orA"/>
                                             <outlet property="waterConsumptionLabel" destination="D4Z-KL-yER" id="S29-HU-hFS"/>
+                                            <outlet property="zooKeeperLabel" destination="CR1-wl-eLN" id="6Cg-Pt-2P1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
