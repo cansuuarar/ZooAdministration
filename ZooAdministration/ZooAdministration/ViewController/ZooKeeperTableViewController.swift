@@ -12,9 +12,6 @@ class ZooKeeperTableViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var zooKeeperTableView: UITableView!
     
     var zooKeeperName: String?
-    var animals: Animal?
-    
-    var zooKeepers: [ZooKeeper] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +22,19 @@ class ZooKeeperTableViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return zooKeepers.count
+        return ZooKeeperManager.shared.zooKeepers.count
     }
+    
+    /*
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+     */
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = zooKeeperTableView.dequeueReusableCell(withIdentifier: "zooKeeperCell", for: indexPath) as! ZooKeeperCell
         
-        let element = zooKeepers[indexPath.row]
+        let element = ZooKeeperManager.shared.zooKeepers[indexPath.row]
         
         cell.zooKeeperNameLabel.text = element.name
         cell.zooKeeperAnimals.text = element.animals.first?.name
@@ -48,6 +51,5 @@ class ZooKeeperTableViewController: UIViewController, UITableViewDelegate, UITab
         self.navigationController?.popViewController(animated: true)
     }
 
-    
-
+  
 }

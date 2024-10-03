@@ -27,6 +27,8 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
         return animals.count
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "animalCell", for: indexPath) as! AnimalCell
         

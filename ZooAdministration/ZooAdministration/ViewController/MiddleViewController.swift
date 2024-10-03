@@ -7,51 +7,60 @@
 
 import UIKit
 
-class MiddleViewController: UIViewController {
-
+class MiddleViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var animalVoice: UITextField!
     @IBOutlet weak var waterConsumptionTextField: UITextField!
-    
-    
     @IBOutlet weak var createAnimalButton: UIButton!
-    
-    
-    @IBOutlet weak var zooKeeperTextField: UITextField!
+   
+    @IBOutlet weak var zooKeeperPickerView: UIPickerView!
     
     var name: String?
     var voice: String?
     var waterConsumption: Int?
     var zooKeeper: ZooKeeper?
     
-    var animals: [Animal] = []
-    var zooKeepers: [ZooKeeper] = []
+    //singleton pattern incele.
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.label
+        zooKeeperPickerView.delegate = self
+        zooKeeperPickerView.dataSource = self
+        zooKeeperPickerView.setValue(UIColor.red, forKeyPath: "textColor")
     }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        ZooKeeperManager.shared.zooKeepers.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let element = ZooKeeperManager.shared.zooKeepers[row].name
+        return element
+    }
+
     
     @IBAction func createAnimal(_ sender: UIButton) {
         let name = nameField.text ?? ""
         let voice = animalVoice.text ?? ""
         let waterConsumption = Int(waterConsumptionTextField.text ?? "") ?? 0
         
-        let zooKeeperName = zooKeeperTextField.text ?? ""
-        let zooKeeper = ZooKeeper(name: zooKeeperName, animals: [])
-                
-        let newAnimal = Animal(name: name, voice: voice, waterConsumption: waterConsumption, zooKeeper: zooKeeper)
+        let index = zooKeeperPickerView.selectedRow(inComponent: 0)
         
-        animals.append(newAnimal)
-        zooKeepers.append(zooKeeper)
+        let newAnimal = Animal(name: name, voice: voice, waterConsumption: waterConsumption, zooKeeper: ZooKeeperManager.shared.zooKeepers[index])
         
-        //self.performSegue(withIdentifier: "toAnimal", sender: self)
+        AnimalManager.shared.animals.append(newAnimal)
         
         
         nameField.text = ""
         animalVoice.text = ""
         waterConsumptionTextField.text = ""
-        zooKeeperTextField.text = ""
+   
     }
     
     
@@ -60,27 +69,16 @@ class MiddleViewController: UIViewController {
     }
     
     
-    @IBAction func createZooKeeper(_ sender: UIButton) {
-        let zooKeeperName = zooKeeperTextField.text ?? ""
-        let zooKeeper = ZooKeeper(name: zooKeeperName, animals: [])
-        
-        zooKeepers.append(zooKeeper)
-        
-        zooKeeperTextField.text = ""
-        
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toAnimal" {
             let destinationVC = segue.destination as! AnimalTableViewController
-            destinationVC.animals = animals  // Tüm array i aktarmak için
-        }
-        
-        if segue.identifier == "toZooKeeper" {
-            let destinationVC = segue.destination as! ZooKeeperTableViewController
-            destinationVC.zooKeepers = zooKeepers
+            
         }
     }
-    
-    
 }
+
+
+/*
+ singelton: ramde. uygulama kapandığında gider.
+
+*/

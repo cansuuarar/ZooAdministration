@@ -21,6 +21,9 @@
 		0E9232E42CADE6A80064F2DC /* ZooKeeperTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9232E32CADE6A80064F2DC /* ZooKeeperTableViewController.swift */; };
 		0E9232E82CADE9D90064F2DC /* ZooKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9232E72CADE9D90064F2DC /* ZooKeeper.swift */; };
 		0E9232EA2CADE9FA0064F2DC /* ZooKeeperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9232E92CADE9FA0064F2DC /* ZooKeeperCell.swift */; };
+		0E9232EC2CAE77130064F2DC /* ZooKeeperMiddleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9232EB2CAE77130064F2DC /* ZooKeeperMiddleViewController.swift */; };
+		0E9232F12CAEA43F0064F2DC /* ZooKeeperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9232F02CAEA43F0064F2DC /* ZooKeeperManager.swift */; };
+		0E9232F32CAEB9460064F2DC /* AnimalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9232F22CAEB9460064F2DC /* AnimalManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		0E9232E32CADE6A80064F2DC /* ZooKeeperTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooKeeperTableViewController.swift; sourceTree = "<group>"; };
 		0E9232E72CADE9D90064F2DC /* ZooKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooKeeper.swift; sourceTree = "<group>"; };
 		0E9232E92CADE9FA0064F2DC /* ZooKeeperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooKeeperCell.swift; sourceTree = "<group>"; };
+		0E9232EB2CAE77130064F2DC /* ZooKeeperMiddleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooKeeperMiddleViewController.swift; sourceTree = "<group>"; };
+		0E9232F02CAEA43F0064F2DC /* ZooKeeperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooKeeperManager.swift; sourceTree = "<group>"; };
+		0E9232F22CAEB9460064F2DC /* AnimalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +78,10 @@
 		0E7A08B72CAAE6B40069546B /* ZooAdministration */ = {
 			isa = PBXGroup;
 			children = (
+				0E9232EF2CAEA42F0064F2DC /* Manager */,
 				0E7A08DC2CAC2DD20069546B /* View */,
 				0E7A08D12CAAE7380069546B /* ViewController */,
-				0E7A08CC2CAAE6D60069546B /* Models */,
+				0E7A08CC2CAAE6D60069546B /* Model */,
 				0E7A08B82CAAE6B40069546B /* AppDelegate.swift */,
 				0E7A08BA2CAAE6B40069546B /* SceneDelegate.swift */,
 				0E7A08BE2CAAE6B40069546B /* Main.storyboard */,
@@ -85,14 +92,14 @@
 			path = ZooAdministration;
 			sourceTree = "<group>";
 		};
-		0E7A08CC2CAAE6D60069546B /* Models */ = {
+		0E7A08CC2CAAE6D60069546B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				0E7A08CD2CAAE6F00069546B /* Animal.swift */,
 				0E9232DD2CAC75150064F2DC /* Zoo.swift */,
 				0E9232E72CADE9D90064F2DC /* ZooKeeper.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0E7A08D12CAAE7380069546B /* ViewController */ = {
@@ -102,6 +109,7 @@
 				0E7A08D62CAB43AB0069546B /* MiddleViewController.swift */,
 				0E7A08BC2CAAE6B40069546B /* StartingViewController.swift */,
 				0E9232E32CADE6A80064F2DC /* ZooKeeperTableViewController.swift */,
+				0E9232EB2CAE77130064F2DC /* ZooKeeperMiddleViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -113,6 +121,15 @@
 				0E9232E92CADE9FA0064F2DC /* ZooKeeperCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0E9232EF2CAEA42F0064F2DC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0E9232F02CAEA43F0064F2DC /* ZooKeeperManager.swift */,
+				0E9232F22CAEB9460064F2DC /* AnimalManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +208,12 @@
 				0E9232E82CADE9D90064F2DC /* ZooKeeper.swift in Sources */,
 				0E7A08DB2CAC2A3C0069546B /* AnimalTableViewController.swift in Sources */,
 				0E7A08CE2CAAE6F00069546B /* Animal.swift in Sources */,
+				0E9232F32CAEB9460064F2DC /* AnimalManager.swift in Sources */,
 				0E7A08B92CAAE6B40069546B /* AppDelegate.swift in Sources */,
+				0E9232F12CAEA43F0064F2DC /* ZooKeeperManager.swift in Sources */,
 				0E9232E42CADE6A80064F2DC /* ZooKeeperTableViewController.swift in Sources */,
 				0E9232DE2CAC75150064F2DC /* Zoo.swift in Sources */,
+				0E9232EC2CAE77130064F2DC /* ZooKeeperMiddleViewController.swift in Sources */,
 				0E7A08DE2CAC2DE30069546B /* AnimalCell.swift in Sources */,
 				0E7A08D72CAB43AB0069546B /* MiddleViewController.swift in Sources */,
 				0E7A08BB2CAAE6B40069546B /* SceneDelegate.swift in Sources */,
