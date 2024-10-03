@@ -11,8 +11,7 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
     var zooKeeper: ZooKeeper?
     
     @IBOutlet weak var tableView: UITableView!
-    
-    var animals: [Animal] = []
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,7 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return animals.count
+        return AnimalManager.shared.animals.count
     }
     
     
@@ -32,7 +31,7 @@ class AnimalTableViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "animalCell", for: indexPath) as! AnimalCell
         
-        let element = animals[indexPath.row]
+        let element = AnimalManager.shared.animals[indexPath.row]
         
         cell.nameLabel.text = element.name
         cell.voiceLabel.text = element.voice

@@ -223,19 +223,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEb-5V-crV">
+                                <rect key="frame" x="90.333333333333329" y="409" width="212.33333333333337" height="34.333333333333314"/>
+                                <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Add Another Zoo Keeper"/>
+                                <connections>
+                                    <action selector="addAnotherZooKeeper:" destination="kJ9-Yz-1g4" eventType="touchUpInside" id="UxR-bV-bjB"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XZ8-Aa-iGG">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="379"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="sEb-5V-crV">
-                                    <rect key="frame" x="0.0" y="200" width="393" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="tintColor" red="0.5568627451" green="0.16078431369999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="gray" title="Add Another Zoo Keeper"/>
-                                    <connections>
-                                        <action selector="addAnotherZooKeeper:" destination="kJ9-Yz-1g4" eventType="touchUpInside" id="UxR-bV-bjB"/>
-                                    </connections>
-                                </button>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="zooKeeperCell" rowHeight="122" id="42o-06-chq" customClass="ZooKeeperCell" customModule="ZooAdministration" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="122"/>
@@ -245,25 +244,32 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBS-UC-SVK">
-                                                    <rect key="frame" x="20" y="10.999999999999998" width="353" height="20.333333333333329"/>
+                                                    <rect key="frame" x="20" y="10.999999999999998" width="100" height="20.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.329999999999998" id="Zzk-3Z-uHK"/>
+                                                        <constraint firstAttribute="width" constant="100" id="fXP-uM-HA5"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5l-4h-LF3">
-                                                    <rect key="frame" x="20" y="90.666666666666671" width="353" height="20.333333333333329"/>
+                                                    <rect key="frame" x="20" y="90.666666666666671" width="100" height="20.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20.329999999999998" id="Tf6-U7-h7w"/>
+                                                        <constraint firstAttribute="width" constant="100" id="zYd-e5-CJ1"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="e5l-4h-LF3" firstAttribute="leading" secondItem="Kcc-k7-Fvc" secondAttribute="leadingMargin" id="8Wi-Xs-zcr"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="HBS-UC-SVK" secondAttribute="trailing" id="cBs-Ce-s2j"/>
-                                                <constraint firstItem="HBS-UC-SVK" firstAttribute="leading" secondItem="Kcc-k7-Fvc" secondAttribute="leadingMargin" id="mRB-k9-ZFY"/>
-                                                <constraint firstItem="HBS-UC-SVK" firstAttribute="top" secondItem="Kcc-k7-Fvc" secondAttribute="topMargin" id="r3u-hI-Wps"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="e5l-4h-LF3" secondAttribute="trailing" id="vGI-R8-OXG"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="e5l-4h-LF3" secondAttribute="bottom" id="yyH-sI-exb"/>
+                                                <constraint firstItem="HBS-UC-SVK" firstAttribute="top" secondItem="Kcc-k7-Fvc" secondAttribute="topMargin" id="4HH-u9-tR3"/>
+                                                <constraint firstItem="e5l-4h-LF3" firstAttribute="leading" secondItem="Kcc-k7-Fvc" secondAttribute="leadingMargin" id="4yz-1T-Qy9"/>
+                                                <constraint firstItem="e5l-4h-LF3" firstAttribute="top" secondItem="HBS-UC-SVK" secondAttribute="bottom" constant="59.329999999999998" id="G0z-92-lF4"/>
+                                                <constraint firstItem="e5l-4h-LF3" firstAttribute="bottom" secondItem="Kcc-k7-Fvc" secondAttribute="bottomMargin" id="Y9a-PZ-7Gn"/>
+                                                <constraint firstItem="HBS-UC-SVK" firstAttribute="leading" secondItem="Kcc-k7-Fvc" secondAttribute="leadingMargin" id="pSK-Sk-yJC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -277,10 +283,12 @@
                         <viewLayoutGuide key="safeArea" id="Ise-yV-l89"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ise-yV-l89" firstAttribute="bottom" secondItem="XZ8-Aa-iGG" secondAttribute="bottom" id="Jov-zu-rrt"/>
+                            <constraint firstItem="XZ8-Aa-iGG" firstAttribute="top" secondItem="JE4-QQ-4aG" secondAttribute="top" id="OCD-Iw-G4r"/>
+                            <constraint firstItem="sEb-5V-crV" firstAttribute="centerX" secondItem="JE4-QQ-4aG" secondAttribute="centerX" id="TJU-Oo-cOh"/>
                             <constraint firstItem="XZ8-Aa-iGG" firstAttribute="leading" secondItem="Ise-yV-l89" secondAttribute="leading" id="Xde-iu-F2N"/>
                             <constraint firstItem="Ise-yV-l89" firstAttribute="trailing" secondItem="XZ8-Aa-iGG" secondAttribute="trailing" id="aBF-VX-Ud6"/>
-                            <constraint firstItem="XZ8-Aa-iGG" firstAttribute="top" secondItem="Ise-yV-l89" secondAttribute="top" id="yOz-xC-6Qh"/>
+                            <constraint firstItem="sEb-5V-crV" firstAttribute="centerY" secondItem="JE4-QQ-4aG" secondAttribute="centerY" id="bdh-WT-hX3"/>
+                            <constraint firstItem="sEb-5V-crV" firstAttribute="top" secondItem="XZ8-Aa-iGG" secondAttribute="bottom" constant="30" id="xJg-DW-xL2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c9K-tm-QPL"/>

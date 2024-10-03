@@ -54,8 +54,10 @@ class MiddleViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
         let newAnimal = Animal(name: name, voice: voice, waterConsumption: waterConsumption, zooKeeper: ZooKeeperManager.shared.zooKeepers[index])
         
+        
         AnimalManager.shared.animals.append(newAnimal)
         
+        ZooKeeperManager.shared.zooKeepers[index].animals.append(newAnimal)
         
         nameField.text = ""
         animalVoice.text = ""
